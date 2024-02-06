@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <div>
+        <h2>Ruta relativa</h2>
+            <img src="/02-02/media/descarga.jfif" alt="">
+    </div>
+
+    <div>
+        <h2>Ruta absoluta</h2>
+            <img src="https://placekitten.com/200/300" alt="">
+    </div>
+
+    <div>
+        <h2>Imagen con link</h2>
+            <a href="https://www.google.com/?hl=es"><img src="/02-02/fotos/google.jfif" alt=""></a>
+    </div>
+    <div>
+        <h2>Vídeo normal</h2>
+            <video src="/02-02/media/leon.mp4" controls="controls" width="400" height="300" poster="/02-02/media/leon.jpg"
+            preload="preload">
+            Tu navegador no soporta html5
+            </video><br>
+    </div>
+    <div>
+        <h2>Vídeo con preload</h2>
+            <video poster="/02-02/media/leon.jpg">
+                <source src="/02-02/media/leon.mp4" type="video/mp4" />
+                <source src="/02-02/media/leon.ogv" type="video/ogg" />
+                <source src="/02-02/media/leon.webm" type="video/webm" />
+                Tu navegador no soporta html5
+        </video>
+    </div>
+        <h2>Audio</h2>
+            <audio src="/02-02/media/HakunaMatataItMeansNoWorries.mp3" controls>
+                Su navegador no soporta HTML5
+            </audio>
+        <h2>Audio con preload</h2>
+            <audio src="/02-02/media/HakunaMatataItMeansNoWorries.wav" controls>
+                <source src="/02-02/media/HakunaMatataItMeansNoWorries.mp3" type="mp3"/>
+                <source sec="/02-02/media/HakunaMatataItMeansNoWorries.wav" type="wav"/>
+            </audio>
+</body>
+
+</html>
