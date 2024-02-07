@@ -1,0 +1,61 @@
+body {
+    background-color: salmon;
+}
+
+.title {
+    font-size: 3em;
+    text-align: center;
+    color: white;
+}
+
+.subtitle {
+    font-size: 1.5em;
+    text-align: right;
+
+}
+
+.bold {
+    font-weight: bold;
+
+}
+
+.subtitle2 {
+    font-size: 1em;
+    text-align: right;
+}
+
+.container {
+    margin: 0px 100px;
+}
+
+p {
+    font-size: 2em;
+}
+
+
+.blue {
+
+    background-color: aqua;
+    border: 5px grey dotted;
+
+}
+
+.yellow {
+
+    background-color: yellowgreen;
+    border: 5px brown solid;
+}
+
+.yellow.hover {}
+
+.green {
+    background-color: rgb(64, 131, 64);
+    border: 5px dotted;
+}
+
+.red {
+
+    background-color: rgb(185, 64, 64);
+    border: 5px solid;
+
+}

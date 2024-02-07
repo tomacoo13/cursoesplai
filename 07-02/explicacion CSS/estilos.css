@@ -1,0 +1,25 @@
+body{
+    border: 1px solid black 
+}
+
+div{
+    background-color: red;
+    width: 100px;
+    height: 100px;
+}
+
+.azul {
+    background-color: blue;
+}
+
+p.azul {
+    font-size: 3rem;
+}
+
+p .azul {
+    font: weight 3em;;
+}
+
+p.hover{
+    
+}

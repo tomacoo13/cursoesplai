@@ -1,0 +1,56 @@
+body {
+    background-color: rgb(36, 122, 72);
+}
+
+.title {
+    font-size: 4em;
+    text-align: left;
+    color: white;
+}
+
+
+.bold {
+    font-weight: bold;
+
+}
+
+.subtitle2 {
+    font-size: 1em;
+    text-align: right;
+}
+
+
+p {
+    font-size: 2.3em;
+    padding: 20px;
+}
+
+.white {
+    background-color: white;
+    border: 10px black solid;
+    width: 50%;
+    margin: auto
+}
+
+.blue {
+
+    background-color: rgba(46, 46, 221, 0.815);
+    border: 10px grey dotted;
+    width: 50%;
+
+}
+
+.yellow {
+
+    background-color: yellow;
+    border: 10px brown solid;
+    width: 50%;
+    margin-left: 50%;
+}
+
+.orange {
+    background-color: orange;
+    border: 10px black dashed;
+    width: 50%;
+    margin: auto
+}

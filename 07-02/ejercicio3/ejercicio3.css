@@ -1,0 +1,33 @@
+body {
+    background-color: aquamarine;
+}
+
+.text-right {
+    text-align: right;
+}
+
+
+.container {
+    font-size: 1.4em;
+    margin: 0px 100px;
+}
+
+
+.titulo {
+    font-size: 1.9em;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.granate {
+    color: rgba(87, 1, 1, 0.979);
+    font-weight: bold;
+}
+
+.greenandwhite {
+    color: green
+}
