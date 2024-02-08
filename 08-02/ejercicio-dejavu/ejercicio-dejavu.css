@@ -1,0 +1,65 @@
+.head {
+    background-color: black;
+    color: white;
+    font-size: 2em;
+    text-align: right;
+}
+
+body {
+    background-color: rgba(206, 197, 197, 0.945);
+    margin: 0;
+    padding: 1px
+}
+
+h2 {
+    padding-top: 3%;
+    text-align: center;
+    border-bottom: 5px white solid;
+    margin: auto;
+}
+
+
+.container {
+    width: 60%;
+    margin: auto;
+    border-bottom: 5px black solid;
+    padding-bottom: 3%;
+}
+
+
+.date {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin: 18px 0px 10px 0px;
+}
+
+.datebackground {
+    background-color: grey;
+    font-size: 1.4em;
+}
+
+
+.lorem {
+    font-size: 1.4rem;
+    line-height: 30px;
+    margin: auto
+}
+
+.bold {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.cursiva {
+    font-style: italic;
+    border-bottom: 1px red dashed;
+    font-family: serif;
+}
+
+.redwhite {
+    color: red;
+    background-color: white;
+
+}

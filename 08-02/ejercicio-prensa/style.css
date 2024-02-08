@@ -1,0 +1,20 @@
+body {
+    background-color: beige;
+    margin: 0;
+}
+
+head {
+    margin: 0px;
+    padding: 0px;
+}
+
+h1 {
+    background-color: grey;
+    margin: 5px 5px;
+    padding: 0 2px;
+}
+
+h2 {
+    background-color: rgb(65, 65, 65);
+    text-align: right;
+}

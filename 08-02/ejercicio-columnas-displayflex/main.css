@@ -1,0 +1,17 @@
+.container {
+    background-image: url(/08-02/media/bg.jpg);
+    width: 750px;
+    height: 571px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+
+
+
+p{
+    padding: 0px 40px;
+}
+
+
