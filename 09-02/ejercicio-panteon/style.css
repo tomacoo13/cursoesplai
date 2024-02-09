@@ -1,0 +1,30 @@
+body {
+    background-color: beige;
+}
+
+.container {
+    background-image: url(/09-02/media/panteon.jpg);
+    width: 720px;
+    height: 450px;
+    margin: auto;
+    overflow: hidden;
+}
+
+
+.box {
+    border: 1px black solid;
+    margin-top: 200px;
+    width: 300px;
+    height: 185px;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+
+.col {
+    border: 1px black solid;
+    overflow: auto;
+    width: 40px;
+
+}
