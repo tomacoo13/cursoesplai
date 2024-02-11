@@ -1,20 +1,61 @@
 body {
-    background-color: burlywood;
+    background-color:bisque;
 }
-
-
 
 .container {
-    display: flex;
-    width: 100%;
-    height: 100%;
+    width: 1000px;
+    margin: auto;
 }
 
-
 h1 {
-    background-color: purple;
-    font-size: 2em;
-    letter-spacing: 20px;
-    color: blue;
+    font-size: 3.5em;
+    letter-spacing: 30px;
+    color: #191970;
     text-align: right;
+}
+
+h2 {
+    clear: both;
+    font-size: 1.8em;
+    margin-top: 0px;
+    background-color: green;
+    color: white;
+    padding: 10px;
+}
+
+.center {
+    display: block;
+    margin: auto;
+}
+
+p {
+    font-size: 1.3em;
+    padding: 10px;
+}
+
+.col {
+    flex: 1;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.row img {
+    margin-right: 20px;
+}
+
+span {
+    font-weight: bold;
+}
+
+.right_image {
+    float: right;
+    margin-right: 0px;
+}
+
+.articulo {
+    overflow: hidden;
 }
