@@ -1,0 +1,8 @@
+@font-face {
+    font-family:mifuente;
+    src: url(/12-02/media/fuente.ttf);
+}
+
+h1 {
+    font-family:mifuente;
+}

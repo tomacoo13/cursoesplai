@@ -1,0 +1,25 @@
+div {
+    width: 300px;
+    height: 300px;
+    transition: 3s;
+    background-color: salmon;
+}
+
+
+div:hover {
+
+    background-color: rgb(175, 113, 113);
+    transition: 1s;
+}
+
+span {
+    margin: 50%;
+    font-size: 5rem;
+    text-shadow: 50px -50px 2px green, -50px -50px 2px blue, -50px 50px 2px orange, 50px -50px 2px brown;
+    transition: 1s;
+}
+
+
+span:hover {
+    text-shadow: -50px 50px 2px red, 50px 50px 2px yellow, 50px -50px 2px green, -50px 50px 2px blue;
+}

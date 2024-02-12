@@ -1,0 +1,8 @@
+.container {
+    width: 400px;
+    height: 400px;
+    background: url(https://pablomonteserin.com/wp-content/uploads/2020/10/mundo.svg), url(https://pablomonteserin.com/wp-content/uploads/2020/10/tijeras.svg) no-repeat bottom right,
+        linear-gradient(to bottom, green 10%, blue);
+    background-size: 50% 50%, auto, auto;
+
+}
