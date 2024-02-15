@@ -1,0 +1,34 @@
+p:hover {
+    font-size: large;
+    transition: 0.5s;
+
+}
+
+p:hover .h {
+
+    font-size: 0.5em;
+    transition: 1s;
+    color: green;
+}
+
+p:hover .o {
+
+    font-size: 10em;
+    transition: 1s;
+    color: orange;
+}
+
+p:hover .l {
+
+    font-size: 15em;
+    transition: 2s;
+    color:brown
+}
+
+
+p:hover .a {
+
+    font-size: 30em;
+    transition: 3s;
+    color:purple
+}

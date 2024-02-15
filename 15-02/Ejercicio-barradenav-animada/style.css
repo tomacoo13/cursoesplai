@@ -1,0 +1,44 @@
+.container {
+    display: flex;
+    position: relative;
+    height: 500px;
+    font-size: 1em;
+}
+
+
+li {
+    list-style: none;
+}
+
+
+
+.column {
+    width: 300px;
+
+}
+
+
+a {
+    background-color: green;
+    text-decoration: none;
+    color: black;
+    padding: 15px;
+    box-sizing: border-box;
+    display: block;
+    border-radius: 50px;
+    width: 100%;
+    transition: 2s;
+    z-index: 1;
+    position: relative;
+    margin-bottom: 5px;
+}
+
+.paragraf {
+    padding: 1%;
+}
+
+a:hover {
+    background-color: aqua;
+    z-index: 1;
+    width: 150%;
+}

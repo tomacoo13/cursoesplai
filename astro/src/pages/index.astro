@@ -1,0 +1,24 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+---
+
+<Layout title="Welcome to Astro."
+	description="Mis cositas">
+	<main>
+		<h1>Título</h1>
+		<div class="box"></div>
+	</main>
+</Layout>
+
+<style>
+	body {
+		background-color: blue;
+	}
+
+	.box {
+		width: 100px;
+		height: 100px;
+		background-color: red;
+	}
+</style>
