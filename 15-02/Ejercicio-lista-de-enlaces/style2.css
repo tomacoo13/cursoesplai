@@ -1,0 +1,67 @@
+ul {
+    list-style: none;
+    display: inline-block;
+
+}
+
+
+ul a {
+    color: black;
+    display: block;
+    padding: 10px 80px;
+    border: 3px black solid;
+    border-radius: 5px;
+    text-decoration: none;
+    background-color: #FFC0CB;
+    
+
+}
+
+li {
+    padding: 0px;
+    display: inline-block;
+    position: relative;
+}
+
+a:hover {
+    background-color: salmon;
+    color: red;
+
+}
+
+@font-face {
+    font-family: flechita;
+    src: url(./media/Arrows_tfb.ttf);
+}
+
+li.hasChildren>a:after {
+    color: purple;
+    content: " o";
+    font-family: flechita;
+
+}
+
+.hasChildren li {
+    width: 100%;
+}
+
+.hasChildren ul {
+    position: absolute;
+    display: block;
+    opacity: 0;
+    padding-left: 0;
+    width: 100%;
+    overflow: hidden;
+    max-height: 0;
+    transition: 1s;
+}
+
+li.hasChildren:hover ul {
+    opacity: 1;
+    max-height: 800px;
+}
+
+li:hover>a {
+    background-color: salmon;
+    color: red;
+}
