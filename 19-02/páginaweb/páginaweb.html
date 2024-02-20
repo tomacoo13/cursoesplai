@@ -2,40 +2,73 @@
 <html lang="en">
 
 <head>
+    <title>Página web | Pablo Monteserín</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description"
+        content="Ejemplo de una maquetación de una página con apariencia profesional que tiene filas, columnas e imágenes utilizando código HTML y CSS">
+    <meta name="robots" content="noindex, follow">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="container">
-        <div class="column1">
-            <img class="vuit" src="./imatges/VUIT.png" alt="">
-            <ul>
-                <li><a href="#">Inici</a></li>
+    <div class="contenedora">
+        <div class="header">
+            <img src="https://pablomonteserin.com/res/html5/ex/pagina-catalana/img/VUIT.png" height="75" width="130"
+                alt="logo buit">
+
+            <ul class="menu con_margin">
+                <li><a href="#" class="active">Inici</a></li>
                 <li><a href="#">Videos</a></li>
                 <li><a href="#">Albums</a></li>
                 <li><a href="#">Contacte</a></li>
             </ul>
-            <img class="slider" src="./imatges/imatge_slider1.jpg" alt="">
 
-            <div class="column2">
-                <h1>Ejercicio de HTML</h1>
-                <div class="box">
-                    <h2>Div inferior</h2>
-                    <img src="./imatges/pantalles_vuit_app.png" alt="">
-                </div>
-                <div class="box">
-                    <h2>Div inferior</h2>
-                    <img src="./imatges/pantalles_vuit_app.png" alt="">
-                </div>
-                <div class="box">
-                    <h2>Div inferior</h2>
-                    <img src="./imatges/pantalles_vuit_app.png" alt="">
-                </div>
+        </div>
+        <img src="https://pablomonteserin.com/res/html5/ex/pagina-catalana/img/imatge_slider1.jpg" height="280"
+            width="965" alt="VUIT radio">
+        <h1 class="titulo">Ejercicio de HTML</h1>
+        <div class="row">
+            <div class="col">
+                <h2>Div inferior</h2>
+                <img src="https://pablomonteserin.com/res/html5/ex/pagina-catalana/img/pantalles_vuit_app.png"
+                    alt="vuit" height="98" width="265" alt="">
+                <p>Lorem ipsum
+                    dolor sit amet, consectetur adipisicing elit. Sequi sunt doloremque atque nulla ipsam quisquam modi
+                    dolores
+                    labore animi odio dolorum a quos, eos distinctio molestias eaque praesentium velit. Molestias!</p>
+            </div>
+            <div class="col">
+                <h2>Div inferior</h2>
+                <img src="https://pablomonteserin.com/res/html5/ex/pagina-catalana/img/pantalles_vuit_app.png"
+                    alt="vuit">
+                <p>Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. Consectetur officiis praesentium sequi voluptatem quos dignissimos blanditiis,
+                    aliquid,
+                    vitae facilis cupiditate eos rem labore quia amet perspiciatis ratione distinctio quis facere.</p>
+            </div>
+            <div class="col">
+                <h2>Div inferior</h2>
+                <img src="https://pablomonteserin.com/res/html5/ex/pagina-catalana/img/pantalles_vuit_app.png"
+                    alt="vuit">
+                <p>Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. Optio esse cupiditate maiores expedita autem voluptatum, tempore mollitia
+                    repellendus
+                    facere, sint, impedit at quasi beatae. Sint odit dolores in debitis, aut.</p>
             </div>
         </div>
+        <div class="footer">
+            <p class="enlaces">
+                <a href="#">Cibernarium.cat</a>
+            </p>
+
+            <ul class="menu">
+                <li><a href="#" class="active">Inici</a></li>
+                <li><a href="#">Videos</a></li>
+                <li><a href="#">Albums</a></li>
+                <li><a href="#">Contacte</a></li>
+            </ul>
+        </div>
+
     </div>
 </body>
 
