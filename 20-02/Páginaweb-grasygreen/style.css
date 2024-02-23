@@ -4,6 +4,7 @@
 }
 
 body {
+    font-family: fuente;
     margin: 0px;
 }
 
@@ -85,8 +86,9 @@ body {
 }
 
 .colleft {
-    margin-left: 200px;
     width: 50%;
+    padding: 0px;
+    justify-content: left;
 }
 
 .colright {
@@ -99,20 +101,27 @@ body {
 }
 
 
-h3 {
-    text-align: center;
+.h3right {
+
+    vertical-align: top ;
+    text-align: left;
+    margin: 40px;
+}
+
+.greyparagraf {
+    color: #C7BFD7;
+    font-weight: bold;
 }
 
 
-
-.botmenu {
+.midmenu {
     list-style: none;
     text-decoration: none;
 }
 
-.botmenu li {
+.midmenu li {
     padding-bottom: 20px;
-    text-align: center;
+    text-align: left;
 }
 
 a {
@@ -122,4 +131,44 @@ a {
 
 p {
     text-align: justify;
+}
+
+.black {
+    background-color: #1E1B1A;
+}
+
+.col {
+    margin-top: 0px;
+    box-sizing: border-box;
+    display:inline-block;
+    flex-direction: column;
+    width: 33%;
+    height: 500px;
+
+}
+
+
+.col ul{
+    margin: auto;
+    padding: 0px;
+}
+
+.col h1{
+    color: white;
+    text-align: center;
+}
+
+.col li {
+    color: grey;
+    list-style: none;
+}
+
+.col p {
+    color: white;
+    font-weight: bold;
+    text-align: justify;
+}
+
+.logo {
+    gap: 50px;
 }
