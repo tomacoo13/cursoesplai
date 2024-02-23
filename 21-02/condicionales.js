@@ -62,7 +62,7 @@ console.log(n1 + n2)
 
 
 
-//Ternario
+Ternario
 
 1.
 
@@ -74,7 +74,7 @@ console.log(b%2 === 0 ? 'b es par':'b es impar')
 
 
 
-// EJERCICIOS SWITCH
+EJERCICIOS SWITCH
 1.
 const color = 'amarillo';
 switch(color) {
@@ -126,6 +126,7 @@ Para números divisibles por 3, imprimir “Fizz”.
 Para números divisibles por 5, imprimir “Buzz”.
 Para números divisibles por 3 y 5, imprimir “FizzBuzz”.
 En cualquier otro caso, imprimir el número.
+
 */
 
 for (let i=0; i<=20; i++){
