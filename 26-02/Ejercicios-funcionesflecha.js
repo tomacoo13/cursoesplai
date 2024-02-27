@@ -34,7 +34,7 @@ const calculatePerimeter = radio => {
 console.log(calculatePerimeter(5,10))
 
 
-const calculateArea= (radio) => {
+const calculateArea = (radio) => {
     return (Math.PI*radio*radio)
 } 
 console.log(calculateArea(5,10))
