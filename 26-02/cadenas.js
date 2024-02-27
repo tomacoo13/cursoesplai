@@ -173,7 +173,6 @@ const contadorDeLetras = (palabra,letra) => {
     return contador
 }
 console.log(contadorDeLetras("HolaA","A"))
-*/
 
 18.
 
@@ -183,18 +182,15 @@ const contadorDeLetras2 = (word1,word2,letter) => {
     const word2InLowerCase = word2.toLowerCase()
     let contador1 = 0
     let contador2 = 0
-console.log(222222)
     for (let i = 0 ; i < word1.length; i++){
-        console.log(111111)
         if(word1InLowerCase[i] === letterInLowerCase) {
-            console.log(3333)
             contador1++
         }
     }
     
     for (let i = 0 ; i < word2.length; i++){
         if(word2InLowerCase[i] === letterInLowerCase){
-        contador2++
+            contador2++
         }
     }
     if(contador1 > contador2){
@@ -203,6 +199,32 @@ console.log(222222)
         return(word2InLowerCase)
     }else{
         return("Iguales")
-        }
+    }
 }
 console.log(contadorDeLetras2("Holaaa","Hola","a"))
+
+19.
+
+const toCase = (txt) => {
+    return txt.toUpperCase() + "-" + txt.toLowerCase()
+}
+
+console.log(toCase("hola"))
+
+20.
+const shortcut = (txt1,txt2) => txt1[0] + txt2[0]
+console.log(shortcut("Amnesty","International"))
+
+21.
+*/
+
+const firstChar  = (txt) => txt.trim()[0]
+
+console.log(firstChar(" Rosa Parks "))
+
+
+const indexOfIgnoreCase = (txt1,txt2) => {
+    const txt1LowerCase = txt1.lowerCase()
+    const txt2LowerCase = txt2.lowerCase()
+    
+}
