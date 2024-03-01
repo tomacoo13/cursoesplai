@@ -190,7 +190,7 @@ const contadorDeLetras2 = (word1,word2,letter) => {
     
     for (let i = 0 ; i < word2.length; i++){
         if(word2InLowerCase[i] === letterInLowerCase){
-            contador2++
+        contador2++
         }
     }
     if(contador1 > contador2){
@@ -199,14 +199,16 @@ const contadorDeLetras2 = (word1,word2,letter) => {
         return(word2InLowerCase)
     }else{
         return("Iguales")
-    }
+        }
 }
-console.log(contadorDeLetras2("Holaaa","Hola","a"))
+console.log(contadorDeLetras2("HolAAA","Hola","a"))
+
 
 19.
 
-const toCase = (txt) => {
-    return txt.toUpperCase() + "-" + txt.toLowerCase()
+const toCase = txt => {
+    return txt.toLowerCase() + ('-') + txt.toUpperCase()
+    
 }
 
 console.log(toCase("hola"))
