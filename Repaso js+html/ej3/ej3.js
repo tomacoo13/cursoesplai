@@ -5,7 +5,7 @@ console.log(randomNumber)
 while (jugando) {
     const userNumber = Number(prompt('Introduce un número, por favor.'));
     if (userNumber === randomNumber) {
-        alert('Número acertado, Hemos ganado.');
+        alert('Número acertado, has ganado.');
         jugando = false;
     } else {
         alert('Número fallado.');
@@ -13,7 +13,7 @@ while (jugando) {
         if (intentos === 3) {
             jugando = false;
             alert('Has perdido.');
-        }   
+        }
     }
 }
 
