@@ -1,0 +1,173 @@
+body {
+    font-family: roboto;
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face {
+    font-family: roboto;
+    src: url(./autopista/Roboto-Thin.ttf);
+}
+
+.container {
+    width: 1000px;
+    margin: auto;
+
+}
+
+.autopista {
+    background: url(./autopista/header.jpg) no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 500px;
+
+
+}
+
+.menu {
+    margin: auto;
+    display: flex;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.2);
+    position: fixed;
+    width: 100%;
+    justify-content: center;
+
+}
+
+.menu li:not(:last-of-type) {
+    border-right: 1px solid rgb(157, 155, 155);
+}
+
+li {
+    list-style: none;
+    display: inline;
+    color: white;
+
+}
+
+li a {
+    color: white;
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+}
+
+p {
+    font-size: 15px;
+}
+
+
+.white p {
+    padding-bottom: 10px;
+}
+
+.white {
+
+    background-color: #F2F2F2;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.part1 {
+    display: inline;
+    width: 100%;
+    border-bottom: 2px black solid;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.part1 h1 {
+
+    color: #797979;
+    text-align: center;
+}
+
+.part2 {
+    display: inline-block;
+
+}
+
+.col {
+    display: inline-block;
+    width: 33%;
+    margin-bottom: 25px;
+
+}
+
+.col h2 {
+    text-align: center;
+    color: #797979;
+}
+
+.col a {
+    display: block;
+    color: white;
+    background-color: #72AC80;
+    text-decoration: none;
+    text-align: center;
+    padding: 5px;
+}
+
+.yellow {
+    background-color: #FFFFFF;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.box {
+    width: 45%;
+    margin: 1px;
+
+}
+
+.box img {
+    width: 100%;
+}
+
+.footerautopista {
+
+    background: url(./autopista/header.jpg) no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 200px;
+    margin: 0px;
+}
+
+.whitep {
+    color: white;
+    text-align: center;
+    text-align: center;
+    padding: 120px;
+    margin: 0px;
+}
+
+.black {
+    margin-top: 0;
+    top: 0;
+    background-color: #161616;
+    margin: 0;
+}
+
+.black h2 {
+    color: white;
+    margin-top: 0;
+    padding: 40px;
+    text-align: center;
+}
+
+.black p {
+    color: white;
+    padding: 10px;
+    margin: 0;
+}
+
+.pcenter {
+
+    text-align: center;
+    padding-bottom: 30px;
+    margin: 0;
+    padding: 25px !important;
+}
