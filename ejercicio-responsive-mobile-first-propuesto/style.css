@@ -13,7 +13,7 @@ body {
 
 header {
     height: 75px;
-    background: url("img/pablomonteserin_small.png") center 0 no-repeat;
+    background: url("img/pablomonteserin_small.png") no-repeat;
     background-position: center;
     position: relative;
 }
@@ -25,7 +25,7 @@ header a.logo {
     top: 40px;
     width: 40px;
     height: 32px;
-    display: block;    
+    display: block;
 }
 
 nav {
@@ -117,9 +117,11 @@ footer {
 }
 
 
-@media (min-width:768px) {   /*Medium*/
+@media (min-width:768px) {
+
+    /*Medium*/
     header {
-        background-image:url(./img/pablomonteserin_medium.png);
+        background-image: url(./img/pablomonteserin_medium.png);
         height: 150px;
     }
 
@@ -137,27 +139,29 @@ footer {
     }
 
     .promo {
-            display: inline-block;
-            width: auto;
-            width: 30%;
+        display: inline-block;
+        width: 30%;
     }
 
     nav li {
-            display: inline-block;
+        display: inline-block;
 
     }
 }
 
-@media (min-width:1024px) { /*fullsize*/
+@media (min-width:1024px) {
+    /*fullsize*/
 
-    nav {
+    nav ul {
         padding: 10px;
-        
+        display: flex;
+        justify-content: space-around;
+
     }
+
     nav li {
-            justify-content: space-between !important;
-            list-style: none;
-        }
+        list-style: none;
+    }
 
     h1 {
         padding: 20px;
@@ -168,9 +172,9 @@ footer {
     }
 
     header {
-            background-image: url(./img/pablomonteserin.png);
-            height: 300px;
-        }
+        background-image: url(./img/pablomonteserin.png);
+        height: 300px;
+    }
 
     header a.logo {
         background-image: url(./img/logo.png) no-repeat;
