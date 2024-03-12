@@ -1,19 +1,16 @@
 const replaceAt = (string, character, index) => {
     return string.substring(0, index) + character + string.substring(index + character.length);
 }
-
 const palabras = ['Casa', 'Cangrejo', 'Palabra', 'Rastrillo']
 const palabraRandom = palabras[Math.floor(Math.random() * palabras.length)]
 let palabraConGuiones = palabraRandom.replace(/./g, "_ ");
 
-const jugando = true
+const jugando = false
 alert(palabraRandom)
-while (palabraRandom !== palabraConGuiones) {
+while (jugando === true) {
     const letraUsuario = prompt('Introdce una letra')
     let hemosAcertado = false
     for (let i = 0; i < palabraRandom.length; i++) {
-
-
 
         if (palabraRandom[i] === letraUsuario) {
             hemosAcertado = true
@@ -24,10 +21,7 @@ while (palabraRandom !== palabraConGuiones) {
 
     if (!hemosAcertado) {
         alert('Has fallado')
-
     }
-
-
 }
 
 
