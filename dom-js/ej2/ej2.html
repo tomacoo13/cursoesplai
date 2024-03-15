@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<!-- 2.Hacer un formulario que convierta de grados centígrados a grados Fahrenheit.Para ello deberé multiplicar por 9 / 5
+y sumar 32. Tener en cuenta que 30 grados centígrados son 86 grados fahrenheit.
+Es posible ampliar este ejercicio añadiendo un segundo botón, de tal forma que cuando lo pulsemos, recojamos los
+grados Fahrenheit introducidos, calculemos los correspondientes grados centígrados y los pintemos en la caja de texto
+correspondiente. -->
+
+<body>
+    <form>
+        <label>Escribe los grados:</label>
+        <input type="number" id="gradosCent">
+        <button type="button" id="btn1">Enviar formulario</button>
+        <input type="number" id="gradosFahr">
+        <button type="button" id="btn2">Enviar formulario</button>
+    </form>
+    <script>
+        const centrigradosFahrenheit = () => {
+            const gradosCentigrados = document.querySelector('#gradosCent').value;
+            gradosFahrenheit = gradosCentigrados * (9 / 5) + 32
+            console.log(gradosFahrenheit)
+            document.querySelector('#gradosFahr').value = gradosFahrenheit;
+        }
+        const FahrenheitCentigrados = () => {
+            const gradosFahrenheit = document.querySelector('#gradosFahr').value;
+            gradosCentigrados = (gradosFahrenheit - 32) * (5 / 9)    // restar 32 y luego multiplicar por 5 / 9 o 0, 555. 
+            console.log(gradosCentigrados)
+            document.querySelector('#gradosCent').value = gradosCentigrados;
+        }
+
+        document.querySelector('#btn1').addEventListener('click', centrigradosFahrenheit);
+        document.querySelector('#btn2').addEventListener('click', FahrenheitCentigrados)
+    </script>
+</body>
+
+</html>

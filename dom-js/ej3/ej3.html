@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .result {
+        width: 500px;
+    }
+</style>
+
+<body>
+    <!-- 3.Hacer un formulario para solicitar el envío de una caja de cartón. En el formulario podremos especificar las
+características de la caja. -->
+    <form>
+        <label for="clientName">Nombre del cliente</label><br>
+        <input type="text" id="clientName"><br><br>
+
+        <label for="materiales">Material de la caja</label><br>
+        <select name="" id="materialCajas">
+            <option value="plástico">Plástico</option>
+            <option value="madera">Madera</option>
+            <option value="hierro">Hierro</option>
+        </select><br><br>
+
+        <p>Dimension de las caja</p>
+        <input type="radio" name="rBtn" class="radiusBtn" value="pequeña"><label for="radiusBtn">pequeña</label><br>
+        <input type="radio" name="rBtn" class="radiusBtn" value="mediana"><label for="radiusBtn">mediana</label><br>
+        <input type="radio" name="rBtn" class="radiusBtn" value="grande"><label for="radiusBtn">grande</label><br>
+        <br>
+
+        <label for="comentarios">Comentarios</label><br><br>
+        <textarea name="comentarios" id="comentarios" cols="20" rows="10"></textarea><br><br>
+        <button type="button" id="btn">Enviar </button>
+        <br><br>
+        <input type="text" class="result" id="result" rows="30">
+
+    </form>
+    <script>
+        const calculate = () => {
+            const clientName = document.querySelector('#clientName').value;
+            console.log(clientName)
+
+            const materialCajas = document.querySelector('#materialCajas').value
+            console.log(materialCajas)
+
+            const tamañoCajas = document.querySelector('[name=rBtn]:checked').value;
+            console.log(tamañoCajas)
+
+            const comentarios = document.querySelector('#comentarios').value;
+            console.log(comentarios)
+
+            const message = `${clientName} ha pedido una caja de ${materialCajas} ${tamañoCajas} y ${comentarios}`
+            console.log(message)
+            document.querySelector('#result').value = message
+        }
+
+        document.querySelector('#btn').addEventListener('click', calculate);
+
+
+    </script>
+</body>
+
+</html>

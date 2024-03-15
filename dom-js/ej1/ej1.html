@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <label>Escribe la cantidad de euros:</label>
+        <input type="number" id="numEuros">
+        <input type="number" id="numDolares">
+        <input type="button" id="btn" value="Enviar formulario">
+    </form>
+    <script>
+        // 1.Hacer un formulario que convierte de euros a dólares.Supondremos que un euro son dos dólares.
+
+        const conversor = () => {
+            const moneda = document.querySelector('#numEuros').value;
+            dolars = moneda * 2
+            console.log(dolars);
+            document.querySelector('#numDolares').value = dolars
+        }
+
+        document.querySelector('#btn').addEventListener('click', conversor);
+
+    </script>
+</body>
+
+</html>
