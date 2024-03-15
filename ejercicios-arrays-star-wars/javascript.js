@@ -17,7 +17,9 @@ fetch('https://swapi.py4e.com/api/people')
         collectByName('C-3PO');
         removeByName('C-3PO');
         getCharacterFilms('C-3PO');
-        collectByName2('C-3PO');
+        collectByName2('Darth Vader');
+        mediaDeAltura2();
+        removeByName2('C-3PO');
     });
 
 // 1.Crear un método llamado getWomansName() que muestre los nombres de todos los personajes femeninos de la película de starwars.Usaremos el método filter y el map.
@@ -77,10 +79,27 @@ const getCharacterFilms = (characterName) => {
 // 9.Crear un método llamado collectByName2(characterName) que recibirá como parámetro de entrada el nombre del personaje que queremos coleccionar y lo añadirá a un array declarado globalmente llamado collectedCharacters2.Cada objeto añadido a este array tendrá una propiedad llamada amount, de tal forma que si añadimos varias veces el mismo objeto, en lugar de que ese objeto aparezca varias veces, aparecerá una sola vez, pero con la propiedad amount aumentada el número de veces que fue añadido.Utilizaremos los métodos push() y find().
 
 const collectByName2 = (characterName) => {
-    const newName = collectedCharacters2.characters.find(character => character.name === characterName)
-    if (newName) {
-        newName.amount++
+    const char = collectedCharacters2.find(character => character.name === characterName)
+    if (char) {
+        char.amount++
     } else {
-        const noRepe = collectedCharacters2.find
+        const selectedCharacter = characters.find( character => character.name === characterName)
+        collectedCharacters2.push({...selectedCharacter, amount : 1 })
     }
+    console.log('collectedByName2() => ' , collectedCharacters2)
+}
+
+// 10.Crear un método llamado mediaDeAltura2() que utilizando reduce, calcule altura media de los personajes que hay en el array collectedCharacters2.
+    const mediaDeAltura2 = () => {
+
+        const collectedHeight = collectedCharacters2.reduce((acc, character) => acc + Number(character.height), 0) / collectedCharacters2.length
+        console.log('mediaDeAltura2( => ', collectedHeight)
+
+    }
+
+// 11.Crear un método llamado removeByName2(charactersName) que utilizando filter, obtenga a partir del array collectedCharacters2 los personajes cuyo nombre no coincide con el parámetro recibido.
+
+const removeByName2 = (charactersName) => {
+    const r = collectedCharacters2.filter( character => character.name !== charactersName);
+    console.log('removeByName2() => ', r)
 }
