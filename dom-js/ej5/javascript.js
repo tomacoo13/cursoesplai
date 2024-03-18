@@ -7,34 +7,46 @@
 calculateHotelCost = (numNights) => numNights * 140
 
 calculateAirplaneCost = (city, numNights) => {
+	let cost
 	if (city == 'oviedo') {
-		return 15
-	}else if ( city == 'tokyo'){	
-		return 700
-	}else if ( city == 'madrid' || city == 'barcelona') {
-		return 90
+		cost = 15
+		return
+
+	} else if (city == 'tokyo') {
+		cost = 700
+		return
+
+	} else if (city == 'madrid' || city == 'barcelona') {
+		cost = 90
+		return
 	}
-	return 0
+	if (numNights > 3) {
+		cost *= 0.9
+		return coste
+	}
+
 }
 
 calculateRentingCarCost = (numNights) => {
 	let cost = numNights * 40
 
-	if (numNights >= 7){
+	if (numNights >= 7) {
 		return cost -= 50
-	}else if ( cost >= 3) {
+
+	} else if (cost >= 3) {
 		return cost -= 20
-	}else {
+
+	} else {
 		return cost
 	}
 }
 
-const calculateCost = () =>{
+const calculateCost = () => {
 	const numNights = document.querySelector("#numNights").value;
 	const city = document.querySelector('#city').value
 
-	const costHotel= calculateHotelCost(numNights)
-    const airplaneCost = calculateAirplaneCost(city)
+	const costHotel = calculateHotelCost(numNights)
+	const airplaneCost = calculateAirplaneCost(city)
 	const costCar = calculateRentingCarCost(numNights)
 
 	console.log("Coste de Hotel:", costHotel);
@@ -43,7 +55,7 @@ const calculateCost = () =>{
 	document.querySelector("#costHotel").value = costHotel
 	document.querySelector('#costTravel').value = airplaneCost
 	document.querySelector('#costCar').value = costCar
-	
+
 	const total = document.querySelector('#costTotal').value = costHotel + airplaneCost + costCar
 	console.log("Coste total:", total)
 }
