@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- 5.Ejercicio coste viaje.
+// Vamos a hacer una aplicación que se encargará de calcular el coste de un viaje. Para ello tendremos una función
+llamada calculateCost que llamará a otras tres funciones.
+// Cada una de estas tres funciones hará un cálculo de un coste parcial del viaje. La suma de los tres costes será el
+coste total del viaje. -->
+
+<body>
+        <style>
+            label {
+                display: inline-block;
+                width: 150px;
+            }
+        </style>
+        
+    <label for="numNights">Introduzca el número de noches</label>
+    <input type="number" class="numNights" id="numNights">
+    <select name="city" id="city">
+        <option value="oviedo">Oviedo</option>
+        <option value="tokyo">Tokyo</option>
+        <option value="madrid">Madrid</option>
+        <option value="barcelona">Barcelona</option>
+    </select>
+    <button type="button" id="calculateCost">Calculas coste</button><br><br>
+
+    <label for="costHotel">Coste Hotel:</label>
+    <input type="number" name="costHotel" id="costHotel"><br>
+
+    <label for="costTravel">Coste viaje</label>
+    <input type="number" name="costTravel" id="costTravel"><br>
+
+    <label for="costCar">Coste alquiler del coche</label>
+    <input type="number" name="costCar" id="costCar"><br>
+
+    <label for="costTotal">Coste costTotal</label>
+    <input type="number" name="costTotal" id="costTotal"> <br>  
+
+    <script src="javascript.js"></script>
+</body>
+</html>

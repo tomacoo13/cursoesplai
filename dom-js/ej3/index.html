@@ -11,7 +11,6 @@
         width: 500px;
     }
 </style>
-
 <body>
     <!-- 3.Hacer un formulario para solicitar el envío de una caja de cartón. En el formulario podremos especificar las
 características de la caja. -->
@@ -39,29 +38,6 @@ características de la caja. -->
         <input type="text" class="result" id="result" rows="30">
 
     </form>
-    <script>
-        const calculate = () => {
-            const clientName = document.querySelector('#clientName').value;
-            console.log(clientName)
-
-            const materialCajas = document.querySelector('#materialCajas').value
-            console.log(materialCajas)
-
-            const tamañoCajas = document.querySelector('[name=rBtn]:checked').value;
-            console.log(tamañoCajas)
-
-            const comentarios = document.querySelector('#comentarios').value;
-            console.log(comentarios)
-
-            const message = `${clientName} ha pedido una caja de ${materialCajas} ${tamañoCajas} y ${comentarios}`
-            console.log(message)
-            document.querySelector('#result').value = message
-        }
-
-        document.querySelector('#btn').addEventListener('click', calculate);
-
-
-    </script>
+<script src="javascript.js"></script>
 </body>
-
 </html>

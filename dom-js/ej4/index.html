@@ -8,13 +8,19 @@
 </head>
 
 <body>
+    <style>
+        .result {
+            width: 300px;
+        }
+    </style>
     <!-- 4.A través de un formulario, el usuario debe introducir un número secreto que estará entre 0 y 5.
 El usuario tendrá tres intentos para acertar el número, si no lo logra, habrá perdido el juego.
 Debemos indicar en un cuadro de texto si el usuario gana, falla el número o pierde. -->
-    <label for="clientName">Nombre del cliente</label>
-    <input type="text" id="clientName">
 
-
+    <label for='number'>Introduce un número entre el 0 y el 5</label>
+    <input type="number" id="number"><br>
+    <button type="button" id="btn">Evaluar</button><br><br>
+    <input type="text" id="result" class="result">
+    <script src="javascript.js"></script>
 </body>
-
 </html>
