@@ -1,5 +1,5 @@
 const calculateCost = () => {
-        let cost = 200
+    let cost = 200
     document.querySelectorAll('[type=radio]:checked').forEach(radiochecked => {
         cost += Number(radiochecked.value)
     })
@@ -8,7 +8,7 @@ const calculateCost = () => {
 
 calculateCost()
 
-document.querySelectorAll('[type=radio').forEach((radio) => radio.addEventListener('click', () =>{
+document.querySelectorAll('[type=radio').forEach((radio) => radio.addEventListener('click', () => {
     calculateCost()
 }))
 
