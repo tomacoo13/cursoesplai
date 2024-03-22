@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            border: 1px solid black;
+            width: 500px;
+            height: 550px;
+            background-color: grey;
+        }
+
+        .box {margin-top: 25px;
+            margin-left: 4cap;
+            margin-bottom: 30px;
+            background-color: beige;
+            border: 1px solid black;
+            border-radius: 25px;
+            padding: 30px;
+            display: table;
+            width: 310px;
+        }
+        .result {
+            margin-top: 50px;
+            margin-left: 60px;
+            justify-content: center;
+            font-size: 30px;
+            color: blue;
+            width: 310px;
+            background-color: beige;
+            border: 1px solid black;
+            border-radius: 25px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="box">
+            <label for="option1"><input type="radio" name="design" value="0">El cliente me suministra el diseño</label><br>
+            <label for="option2"><input type="radio" name="design" value="50" >Yo me encargo del diseño</label>
+        </div>
+        
+        <div class="box">
+            <label for="option3"><input type="radio" name="cart" value="0">La página no incorpora carrito de la compra</label><br>
+            <label for="option4"><input type="radio" name="cart" value="100">La página incorpora un carrito de la compra</label>
+        </div>
+        
+        <div class="box">
+        <label for="option5"><input type="radio" name="sub" value="0">La página no permite suscripción</label><br>
+        <label for="option6"><input type="radio" name="sub" value="50">La página permite suscripción</label>
+    </div>
+    <p class="result"></p>
+</div>
+    <script src="./javascript.js"></script>
+</body>
+</html>
