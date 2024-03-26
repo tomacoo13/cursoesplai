@@ -1,0 +1,44 @@
+.container {
+    width: 800px;
+    height: 500px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: beige;
+}
+
+.col1 {
+    margin-top: 100px;
+    width: 50%;
+}
+
+.col2 {
+    margin-top: 130px;
+    background-image: url(./hangman-game_pm-1024x212.png);
+    width: 170px;
+    height: 220px;
+}
+
+
+.hiddernWord {
+    font-weight: bold;
+}
+
+button {
+    background-color: rgb(231, 45, 45);
+
+    color: white;
+    border: 0px;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: salmon;
+}
+
+p {
+    font-size: 20px;
+}
